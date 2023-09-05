@@ -30,13 +30,10 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    template_krho48i;
-    service_ey5vhmj;
-    kUVEAKXwYP3htVIiw;
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        "service_ey5vhmj",
+        "template_krho48i",
         {
           from_name: form.name,
           to_name: "Gaash Shmilovich",
@@ -44,7 +41,7 @@ const Contact = () => {
           to_email: "gaash.shm@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        "kUVEAKXwYP3htVIiw"
       )
       .then(
         () => {
